@@ -1,0 +1,24 @@
+﻿生成启动时间为 2018/6/6 13:27:19。
+     1>项目“D:\code\VS2015\FaceRecognize\FaceRecognize\FaceRecognize.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Microsoft Visual Studio 2015\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /I.\GeneratedFiles\Release /ID:\Qt\5.6\msvc2015\include /ID:\Qt\5.6\msvc2015\include\QtCore /ID:\Qt\5.6\msvc2015\include\QtGui /ID:\Qt\5.6\msvc2015\include\QtWidgets /ID:\Qt\5.6\msvc2015\include\QtPlatformSupport /ID:\Qt\5.6\msvc2015\include\ActiveQt /ID:\Qt\5.6\msvc2015\include\QtQuickWidgets /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_NETWORK_LIB /D QT_QUICK_LIB /D QT_QUICKWIDGETS_LIB /D QT_UITOOLS_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt MyTitleBar.cpp
+         MyTitleBar.cpp
+       Link:
+         D:\Microsoft Visual Studio 2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\code\VS2015\FaceRecognize\Win32\Release\\FaceRecognize.exe" /NOLOGO /LIBPATH:D:\Qt\5.6\msvc2015\lib /LIBPATH:D:\Qt\5.6\msvc2015\plugins\platforms qtmain.lib Qt5Core.lib Qt5Gui.lib Qt5Widgets.lib Qt5Network.lib Qt5PlatformSupport.lib opencv_calib3d2413.lib opencv_contrib2413.lib opencv_core2413.lib opencv_features2d2413.lib opencv_flann2413.lib opencv_gpu2413.lib opencv_highgui2413.lib opencv_imgproc2413.lib opencv_legacy2413.lib opencv_ml2413.lib opencv_nonfree2413.lib opencv_objdetect2413.lib opencv_ocl2413.lib opencv_photo2413.lib opencv_stitching2413.lib opencv_superres2413.lib opencv_ts2413.lib opencv_video2413.lib opencv_videostab2413.lib Qt5AxContainer.lib Qt5AxBase.lib Qt5QuickWidgets.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:\code\VS2015\FaceRecognize\Win32\Release\FaceRecognize.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\code\VS2015\FaceRecognize\Win32\Release\FaceRecognize.lib" /MACHINE:X86 /SAFESEH Release\BaseWindow.obj
+         Release\FaceRecognize.obj
+         Release\qrc_FaceRecognize.obj
+         Release\moc_BaseWindow.obj
+         Release\moc_FaceRecognize.obj
+         Release\moc_login.obj
+         Release\moc_mode.obj
+         Release\moc_MyTitleBar.obj
+         Release\login.obj
+         Release\main.obj
+         Release\mode.obj
+         Release\MyTitleBar.obj
+         FaceRecognize.vcxproj -> D:\code\VS2015\FaceRecognize\Win32\Release\FaceRecognize.exe
+     1>已完成生成项目“D:\code\VS2015\FaceRecognize\FaceRecognize\FaceRecognize.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:02.28

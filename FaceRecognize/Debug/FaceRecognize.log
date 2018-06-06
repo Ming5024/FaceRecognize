@@ -1,0 +1,14 @@
+﻿生成启动时间为 2018/6/1 23:13:11。
+     1>项目“D:\code\VS2015\FaceRecognize\FaceRecognize\FaceRecognize.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Microsoft Visual Studio 2015\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /ID:\Qt\5.6\msvc2015\include /I.\GeneratedFiles\Debug /ID:\Qt\5.6\msvc2015\include\QtCore /ID:\Qt\5.6\msvc2015\include\QtGui /ID:\Qt\5.6\msvc2015\include\QtQuick /ID:\Qt\5.6\msvc2015\include\QtQuickWidgets /ID:\Qt\5.6\msvc2015\include\QtUiTools /ID:\Qt\5.6\msvc2015\include\QtWidgets /ID:\Qt\5.6\msvc2015\include\ActiveQt /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_NETWORK_LIB /D QT_QUICK_LIB /D QT_QUICKWIDGETS_LIB /D QT_UITOOLS_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt FaceRecognize.cpp GeneratedFiles\Debug\moc_FaceRecognize.cpp GeneratedFiles\Debug\moc_login.cpp GeneratedFiles\Debug\moc_mode.cpp login.cpp main.cpp mode.cpp
+         FaceRecognize.cpp
+     1>d:\code\vs2015\facerecognize\facerecognize\mode.h(12): fatal error C1083: 无法打开包括文件: “socketThread.h”: No such file or directory
+         moc_FaceRecognize.cpp
+     1>d:\code\vs2015\facerecognize\facerecognize\mode.h(12): fatal error C1083: 无法打开包括文件: “socketThread.h”: No such file or directory
+         moc_login.cpp
+     1>已完成生成项目“D:\code\VS2015\FaceRecognize\FaceRecognize\FaceRecognize.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:03.51

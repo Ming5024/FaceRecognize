@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FaceRecognizeClass</class>
+ <widget class="QWidget" name="FaceRecognizeClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>367</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FaceRecognize</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255))</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>261</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>0</width>
+     <height>3</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255, 255, 255);
+/*border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;*/
+background-color: rgba(32, 125, 255,0);
+</string>
+   </property>
+   <property name="lineWidth">
+    <number>5</number>
+   </property>
+   <property name="text">
+    <string>欢迎使用该人脸识别系统，请在下方输
+入框输入你想要进行连接的服务器的IP
+地址并点击按钮进行连接。</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>180</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(0, 0, 0);
+border:0.1em solid rgb(0, 0, 0);
+/*
+border-radius:5px;
+*/
+background-color: rgba(200, 200, 200,0);</string>
+   </property>
+   <property name="text">
+    <string>连接</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>120</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255, 255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(32, 125, 255,0);
+</string>
+   </property>
+   <property name="text">
+    <string>IP地址</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="connectIP">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>120</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(79, 79, 79);
+border:0.1em solid rgb(180, 180, 180);
+border-radius:5px;
+background-color:white;</string>
+   </property>
+   <property name="text">
+    <string>172.18.157.216</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="FaceRecognize.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>FaceRecognizeClass</receiver>
+   <slot>openlogin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-66</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>openlogin()</slot>
+ </slots>
+</ui>

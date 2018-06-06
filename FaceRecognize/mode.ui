@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mode</class>
+ <widget class="QWidget" name="mode">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>686</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>mode</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.761194 rgba(255, 255, 255, 255))</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>691</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QStackedWidget{
+	background-color: rgba(0, 0, 0, 0);
+}</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="student">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>691</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabBar::tab{ min-height: 80px; min-width:30px;border:2px solid rgb(0, 0, 0)}
+QTabBar::tab:second{margin-bottom:5px}
+QTabBar::tab:selected{background-color:rgb(255, 255, 255)}
+QTabBar::tab:!selected{background-color:rgba(0, 0, 0,0)}
+background-color:rgba(0,0,0,0)
+
+</string>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::West</enum>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <property name="usesScrollButtons">
+      <bool>true</bool>
+     </property>
+     <property name="documentMode">
+      <bool>false</bool>
+     </property>
+     <property name="tabsClosable">
+      <bool>false</bool>
+     </property>
+     <property name="movable">
+      <bool>false</bool>
+     </property>
+     <property name="tabBarAutoHide">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="tab">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <attribute name="title">
+       <string>签到</string>
+      </attribute>
+      <widget class="QLabel" name="class_label">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(32, 125, 255,0);</string>
+       </property>
+       <property name="text">
+        <string>班级：1001</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="recap_Button">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>430</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 0);
+border:0.1em solid rgb(0, 0, 0);
+/*
+border-radius:5px;
+*/
+background-color: rgba(200, 200, 200,0);</string>
+       </property>
+       <property name="text">
+        <string>重拍</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>90</y>
+         <width>161</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(32, 125, 255,0);</string>
+       </property>
+       <property name="text">
+        <string>你好，欢迎使用人脸识
+别签到系统右侧区域将
+显示当前摄像头拍摄到
+的画面，请点击拍照按
+钮进行拍摄。确认无误
+后请点击上传按钮进行
+上传，并等待服务器返
+回结果。
+如果对拍摄结果不满意，
+可以点击重拍按钮进行
+重新拍摄。</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="capture_Button">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>430</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 0);
+border:0.1em solid rgb(0, 0, 0);
+/*
+border-radius:5px;
+*/
+background-color: rgba(200, 200, 200,0);</string>
+       </property>
+       <property name="text">
+        <string>拍照</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="id_label">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(32, 125, 255,0);</string>
+       </property>
+       <property name="text">
+        <string>学号：153300xx</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="upload_Button">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>430</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 0);
+border:0.1em solid rgb(0, 0, 0);
+/*
+border-radius:5px;
+*/
+background-color: rgba(200, 200, 200,0);</string>
+       </property>
+       <property name="text">
+        <string>上传</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="camlabel">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>20</y>
+         <width>421</width>
+         <height>361</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:black;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>430</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 0);
+border:0.1em solid rgb(0, 0, 0);
+/*
+border-radius:5px;
+*/
+background-color: rgba(200, 200, 200,0);</string>
+       </property>
+       <property name="text">
+        <string>exit</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>320</y>
+         <width>151</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(255, 255, 255,255);</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>查询</string>
+      </attribute>
+      <widget class="QPushButton" name="query_button">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>60</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 0);
+border:0.1em solid rgb(0, 0, 0);
+/*
+border-radius:5px;
+*/
+background-color: rgba(200, 200, 200,0);</string>
+       </property>
+       <property name="text">
+        <string>查询</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="query_table">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>140</y>
+         <width>406</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(79, 79, 79);
+border-radius:5px;
+background-color: white;</string>
+       </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>180</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>日期</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>是否签到</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>65</y>
+         <width>16</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(32, 125, 255,0);</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="query_date1">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>60</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 127);
+border:0.1em solid rgb(0, 0, 0);
+border-radius:5px;
+background-color: rgba(255, 255, 255,200);</string>
+       </property>
+       <property name="dateTime">
+        <datetime>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2018</year>
+         <month>1</month>
+         <day>1</day>
+        </datetime>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="query_date2">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>60</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 127);
+border:0.1em solid rgb(0, 0, 0);
+border-radius:5px;
+background-color: rgba(255, 255, 255,200);</string>
+       </property>
+       <property name="dateTime">
+        <datetime>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2018</year>
+         <month>12</month>
+         <day>31</day>
+        </datetime>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="teacher">
+    <widget class="QTabWidget" name="tabWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>711</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabBar::tab{ min-height: 80px; min-width:30px;border:2px solid rgb(0, 0, 0)}
+QTabBar::tab:second{margin-bottom:5px}
+QTabBar::tab:selected{background-color:rgb(255, 255, 255)}
+QTabBar::tab:!selected{background-color:rgba(0, 0, 0,0)}
+background-color:rgba(0,0,0,0)
+
+</string>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::West</enum>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Triangular</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>签到界面</string>
+      </attribute>
+      <widget class="QTableWidget" name="signin_table">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>150</y>
+         <width>451</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(79, 79, 79);
+border-radius:5px;
+background-color: white;</string>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>213</number>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>36</number>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>39</number>
+       </attribute>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>34</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>姓名</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>签到情况</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QPushButton" name="dynamic_signin">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>390</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 0);
+border:0.1em solid rgb(0, 0, 0);
+/*
+border-radius:5px;
+*/
+background-color: rgba(200, 200, 200,0);</string>
+       </property>
+       <property name="text">
+        <string>动态签到</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="normal_signin">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>390</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 0);
+border:0.1em solid rgb(0, 0, 0);
+/*
+border-radius:5px;
+*/
+background-color: rgba(200, 200, 200,0);</string>
+       </property>
+       <property name="text">
+        <string>课前签到</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="broadcastText">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>20</y>
+         <width>351</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(255, 255, 255,255);</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="finish_signin">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>390</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 0);
+border:0.1em solid rgb(0, 0, 0);
+/*
+border-radius:5px;
+*/
+background-color: rgba(200, 200, 200,0);</string>
+       </property>
+       <property name="text">
+        <string>结束签到</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>50</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 0);
+border:0.1em solid rgb(0, 0, 0);
+/*
+border-radius:5px;
+*/
+background-color: rgba(200, 200, 200,0);</string>
+       </property>
+       <property name="text">
+        <string>发送</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>查询</string>
+      </attribute>
+      <widget class="QLineEdit" name="query_id">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>80</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 255);
+border:2px solid rgb(200, 200, 200);
+border-radius:5px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>80</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(32, 125, 255,0);</string>
+       </property>
+       <property name="text">
+        <string>学号：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>160</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(32, 125, 255,0);</string>
+       </property>
+       <property name="text">
+        <string>起始日期：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>230</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(32, 125, 255,0);</string>
+       </property>
+       <property name="text">
+        <string>结束日期：</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="tea_query">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>320</y>
+         <width>91</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 0);
+border:0.1em solid rgb(0, 0, 0);
+/*
+border-radius:5px;
+*/
+background-color: rgba(200, 200, 200,0);</string>
+       </property>
+       <property name="text">
+        <string>查询</string>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="tea_query_date1">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>160</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 127);
+border:0.1em solid rgb(0, 0, 0);
+border-radius:5px;
+background-color: rgba(255, 255, 255,200);</string>
+       </property>
+       <property name="dateTime">
+        <datetime>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2018</year>
+         <month>1</month>
+         <day>1</day>
+        </datetime>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="tea_query_date2">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>230</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 127);
+border:0.1em solid rgb(0, 0, 0);
+border-radius:5px;
+background-color: rgba(255, 255, 255,200);</string>
+       </property>
+       <property name="dateTime">
+        <datetime>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2018</year>
+         <month>12</month>
+         <day>31</day>
+        </datetime>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>人工签到</string>
+      </attribute>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>110</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(32, 125, 255,0);</string>
+       </property>
+       <property name="text">
+        <string>学号：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="signin_id">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>110</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 255);
+border:2px solid rgb(200, 200, 200);
+border-radius:5px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="signin_ratio">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>210</y>
+         <width>71</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;
+color:rgb(255, 255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(32, 125, 255,0);
+</string>
+       </property>
+       <property name="text">
+        <string>签到</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="absence_ratio">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>210</y>
+         <width>71</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:20px;
+color:rgb(255, 255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(32, 125, 255,0);
+</string>
+       </property>
+       <property name="text">
+        <string>缺席</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>210</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255, 255);
+/*
+border:0.1em solid rgb(158, 149, 255);
+border-radius:5px;
+*/
+background-color: rgba(32, 125, 255,0);</string>
+       </property>
+       <property name="text">
+        <string>签到情况：</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="man_signin">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>290</y>
+         <width>91</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(0, 0, 0);
+border:0.1em solid rgb(0, 0, 0);
+/*
+border-radius:5px;
+*/
+background-color: rgba(200, 200, 200,0);</string>
+       </property>
+       <property name="text">
+        <string>提交</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mode</receiver>
+   <slot>exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>440</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-42</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>recap_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>mode</receiver>
+   <slot>recap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>312</x>
+     <y>441</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-107</x>
+     <y>418</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>capture_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>mode</receiver>
+   <slot>capture()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>442</x>
+     <y>444</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-127</x>
+     <y>408</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>upload_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>mode</receiver>
+   <slot>upload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>632</x>
+     <y>445</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-89</x>
+     <y>404</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>query_button</sender>
+   <signal>clicked()</signal>
+   <receiver>mode</receiver>
+   <slot>query()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>584</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-63</x>
+     <y>38</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>mode</receiver>
+   <slot>broadcast()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>533</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-46</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>normal_signin</sender>
+   <signal>clicked()</signal>
+   <receiver>mode</receiver>
+   <slot>normal_signin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>184</x>
+     <y>420</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-65</x>
+     <y>374</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dynamic_signin</sender>
+   <signal>clicked()</signal>
+   <receiver>mode</receiver>
+   <slot>dynamic_signin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>344</x>
+     <y>405</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-56</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>finish_signin</sender>
+   <signal>clicked()</signal>
+   <receiver>mode</receiver>
+   <slot>finish_signin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>500</x>
+     <y>413</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-35</x>
+     <y>369</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tea_query</sender>
+   <signal>clicked()</signal>
+   <receiver>mode</receiver>
+   <slot>teacher_query()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>397</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-91</x>
+     <y>292</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>man_signin</sender>
+   <signal>clicked()</signal>
+   <receiver>mode</receiver>
+   <slot>manSignin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>377</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-47</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>exit()</slot>
+  <slot>recap()</slot>
+  <slot>capture()</slot>
+  <slot>upload()</slot>
+  <slot>query()</slot>
+  <slot>broadcast()</slot>
+  <slot>normal_signin()</slot>
+  <slot>dynamic_signin()</slot>
+  <slot>finish_signin()</slot>
+  <slot>teacher_query()</slot>
+  <slot>manSignin()</slot>
+ </slots>
+</ui>
